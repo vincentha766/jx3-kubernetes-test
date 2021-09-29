@@ -20,7 +20,7 @@ spec:
   - key: staging
   - key: production
   ingress:
-    domain: ""
+    domain: "jx.cluster.test"
     externalDNS: false
     namespaceSubDomain: -jx.
     tls:

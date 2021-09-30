@@ -34,4 +34,4 @@ spec:
   repository: bucketrepo
   secretStorage: local
   vault: {}
-  webhook: lighthouse
+  webhook: false

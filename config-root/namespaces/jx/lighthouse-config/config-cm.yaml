@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        vincentha766/jx-spring-test: true
         vincentha766/jx3-kubernetes-test: true
     plank: {}
     pod_namespace: jx
@@ -19,6 +20,7 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        vincentha766/jx-spring-test: merge
         vincentha766/jx3-kubernetes-test: merge
       queries:
       - labels:
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - vincentha766/jx3-kubernetes-test
+        - vincentha766/jx-spring-test
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - vincentha766/jx3-kubernetes-test
+        - vincentha766/jx-spring-test
       target_url: http://lighthouse-jx.jx.cluster.test/merge/status
 kind: ConfigMap
 metadata:
